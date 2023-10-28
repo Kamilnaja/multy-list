@@ -27,6 +27,7 @@ To start the development server run `nx serve api`. Open your browser and naviga
 
 To create new library for api, run the command below:
 
+Api swagger documentation is available under url: [localhost:3000/docs](http://localhost:3000/docs)
 ```
 nx g @nx/nest:library --name=<lib-name> --buildable=true --directory=libs/api/<lib-directory> --importPath=@api/<lib-name> --projectNameAndRootFormat=as-provided --no-interactive
 ```
