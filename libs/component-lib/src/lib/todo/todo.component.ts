@@ -8,6 +8,4 @@ import { Component } from '@angular/core';
   templateUrl: './todo.component.html',
   styleUrls: ['./todo.component.scss'],
 })
-export class TodoComponent {
-  asdfasdfasd;
-}
+export class TodoComponent {}
