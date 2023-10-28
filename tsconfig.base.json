@@ -15,7 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@multilist/component-lib": ["libs/component-lib/src/index.ts"]
+      "@multilist/component-lib": ["libs/component-lib/src/index.ts"],
+      "@multilist/prisma-client": ["libs/prisma-client/src/index.ts"],
+      "@multilist/prisma-schema": ["libs/prisma-schema/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
