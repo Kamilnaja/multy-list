@@ -1,11 +1,15 @@
-import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { NgIf } from '@angular/common';
+import { Component, Input } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 @Component({
   selector: 'shared-multy-todo',
   standalone: true,
-  imports: [CommonModule, MatButtonModule],
+  imports: [MatButtonModule, NgIf],
   templateUrl: './todo.component.html',
   styleUrls: ['./todo.component.scss'],
 })
-export class TodoComponent {}
+export class TodoComponent {
+  @Input() setup: TodoComponent;
+
+  isOpened = false;
+}
