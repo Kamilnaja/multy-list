@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "npx nx serve multy-list"
+    "start": "npx nx serve multy-list",
+    "nx": "nx",
+    "prisma": "prisma"
   },
   "private": true,
   "dependencies": {
