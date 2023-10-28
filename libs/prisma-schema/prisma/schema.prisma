@@ -1,0 +1,17 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../../../node_modules/prisma-client"
+  // for multiple clients use specific output directories
+  // output   = "../../../node_modules/@prisma/client/<some-custom-name>"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id    Int     @id @map("_id")
+  email String  @unique
+  name  String
+}
