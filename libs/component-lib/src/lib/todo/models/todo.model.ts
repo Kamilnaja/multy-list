@@ -1,4 +1,6 @@
-export interface Todo {
+import { TodoListItem } from './todo-list.model';
+
+export interface Todo extends TodoListItem {
   completion: boolean;
   priority: number;
   completionDate: Date;
