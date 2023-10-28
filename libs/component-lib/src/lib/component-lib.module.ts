@@ -1,9 +1,12 @@
-import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { TodoComponent } from './todo/todo.component';
+import { ListComponent } from './todolist/list.component';
+
+const components = [TodoComponent, ListComponent];
 
 @NgModule({
-  imports: [CommonModule, TodoComponent],
-  exports: [TodoComponent],
+  imports: components,
+  exports: components,
+  declarations: [],
 })
 export class ComponentLibModule {}

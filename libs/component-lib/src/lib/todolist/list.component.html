@@ -1,0 +1,5 @@
+<div cdkDropList class="list" (cdkDropListDropped)="drop($event)">
+  <div class="box" *ngFor="let todo of todos" cdkDrag>
+    <shared-multy-todo [todo]="todo"></shared-multy-todo>
+  </div>
+</div>
