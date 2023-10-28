@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { TodoComponent } from '@multilist/component-lib';
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent, RouterModule],
+  imports: [RouterModule, TodoComponent],
   selector: 'multilist-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
