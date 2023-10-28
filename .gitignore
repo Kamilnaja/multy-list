@@ -39,4 +39,8 @@ testem.log
 Thumbs.db
 
 .nx/cache
+
+
 .angular
+
+.env
