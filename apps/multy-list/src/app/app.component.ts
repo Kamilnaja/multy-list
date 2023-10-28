@@ -5,7 +5,7 @@ import { TodoComponent } from '@multilist/component-lib';
 @Component({
   standalone: true,
   imports: [RouterModule, TodoComponent],
-  selector: 'multilist-root',
+  selector: 'multy-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })

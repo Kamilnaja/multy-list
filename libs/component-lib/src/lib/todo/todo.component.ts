@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'multilist-todo',
+  selector: 'shared-multy-todo',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './todo.component.html',
