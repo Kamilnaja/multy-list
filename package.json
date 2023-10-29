@@ -4,8 +4,9 @@
   "license": "MIT",
   "scripts": {
     "start": "npx nx serve multy-list",
+    "start:api": "nx run api:serve",
     "nx": "nx",
-    "prisma": "prisma"
+    "generate-types": "nx run prisma-schema:generate-types"
   },
   "private": true,
   "dependencies": {
