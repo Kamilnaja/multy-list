@@ -1,3 +1,18 @@
 :host {
   display: flex;
+  width: 100%;
+}
+
+.todo__section {
+  &--select {
+    flex: 1;
+  }
+
+  &--title {
+    flex: 4;
+  }
+
+  &--btn {
+    flex: 1;
+  }
 }

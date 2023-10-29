@@ -14,14 +14,17 @@ export class AppComponent {
     {
       name: 'test',
       id: '1',
+      priority: 'A',
     },
     {
       name: 'test2',
       id: '2',
+      priority: 'B',
     },
     {
       name: 'test3',
       id: '3',
+      priority: 'C',
     },
   ];
   title = 'multy-list';
