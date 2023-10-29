@@ -30,4 +30,5 @@ export class TodoComponent {
   readonly priorities = PRIORITIES;
 
   isOpened = false;
+  selected: string;
 }

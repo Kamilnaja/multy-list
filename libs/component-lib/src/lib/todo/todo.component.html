@@ -1,7 +1,7 @@
 <section class="todo todo__section--select">
   <mat-form-field>
-    <mat-select>
-      <mat-option *ngFor="let priority of priorities">{{
+    <mat-select [(value)]="selected">
+      <mat-option *ngFor="let priority of priorities" [value]="priority">{{
         priority
       }}</mat-option>
     </mat-select>
