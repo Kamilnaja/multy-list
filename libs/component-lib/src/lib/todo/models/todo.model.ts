@@ -1,9 +1,8 @@
-import { Priority } from './priority.model';
 import { TodoListItem } from './todo-list.model';
 
+// full object with details
+
 export interface Todo extends TodoListItem {
-  completion: boolean;
-  priority: Priority;
   completionDate: Date;
   creationDate: Date;
   description: string;

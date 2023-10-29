@@ -6,4 +6,5 @@ export interface TodoListItem {
   name: string;
   id: string;
   priority: Priority;
+  isDone: boolean;
 }
