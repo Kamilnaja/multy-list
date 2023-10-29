@@ -5,8 +5,8 @@ import { ListComponent } from './todolist/list.component';
 const components = [TodoComponent, ListComponent];
 
 @NgModule({
-  imports: components,
-  exports: components,
+  imports: [...components],
+  exports: [...components],
   declarations: [],
 })
 export class ComponentLibModule {}
