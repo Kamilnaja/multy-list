@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "strictPropertyInitialization": false,
     "baseUrl": ".",
+    "strictPropertyInitialization": false,
     "paths": {
       "@api/users": ["libs/api/users/src/index.ts"],
       "@multilist/component-lib": ["libs/component-lib/src/index.ts"],

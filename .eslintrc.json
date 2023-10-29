@@ -24,12 +24,13 @@
     {
       "files": ["*.ts", "*.tsx"],
       "extends": ["plugin:@nx/typescript"],
-      "rules": {}
-    },
-    {
-      "files": ["*.js", "*.jsx"],
-      "extends": ["plugin:@nx/javascript"],
-      "rules": {}
+      "rules": {
+        "no-console": "error",
+        "no-debugger": "error",
+        "no-unused-expressions": "error",
+        "no-unused-vars": "error",
+        "no-empty": "error"
+      }
     },
     {
       "files": ["*.spec.ts", "*.spec.tsx", "*.spec.js", "*.spec.jsx"],
