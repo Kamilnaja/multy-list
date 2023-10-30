@@ -4,11 +4,12 @@
   "license": "MIT",
   "scripts": {
     "start": "npx nx serve multy-list",
+    "start:api": "nx run api:serve",
     "prepare": "husky install",
     "lint-staged": "lint-staged",
     "lint": "eslint \"**/*.{ts,tsx}\"",
     "nx": "nx",
-    "prisma": "prisma"
+    "generate-types": "nx run prisma-schema:generate-types"
   },
   "lint-staged": {
     "**/*.{ts,scss}": [
@@ -31,10 +32,12 @@
     "@nestjs/common": "^10.0.2",
     "@nestjs/core": "^10.0.2",
     "@nestjs/platform-express": "^10.0.2",
+    "@nestjs/swagger": "^7.1.14",
     "@prisma/client": "^5.5.2",
     "axios": "^1.0.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.0",
+    "swagger-ui-express": "^5.0.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
   },
