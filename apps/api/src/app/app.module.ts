@@ -2,9 +2,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import {UsersModule} from "@api/users";
 
 @Module({
-  imports: [BrowserAnimationsModule],
+  imports: [UsersModule],
   controllers: [AppController],
   providers: [AppService],
 })
