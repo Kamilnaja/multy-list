@@ -20,15 +20,20 @@ jobs:
 
       - run: npm ci
         name: Install dependencies
+        if: always()
 
       - run: npx nx affected -t lint --parallel=${{ matrix.parallel }}
         name: Lint
+        if: always()
 
       - run: npx nx affected -t test --parallel=${{ matrix.parallel }}
         name: Test
+        if: always()
 
       - run: npx nx affected -t build --parallel=${{ matrix.parallel }}
         name: Build
+        if: always()
 
       - run: npx nx affected -t e2e --parallel=${{ matrix.parallel }}
         name: E2E Tests
+        if: always()
