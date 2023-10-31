@@ -6,6 +6,10 @@ jobs:
   main:
     permissions: write-all
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        parallel: [ 1, 2, 3, 4]
+
     steps:
       - uses: actions/checkout@v3
         with:
@@ -17,14 +21,14 @@ jobs:
       - run: npm ci
         name: Install dependencies
 
-      - run: npx nx affected -t lint --parallel=3
+      - run: npx nx affected -t lint --parallel=${{ matrix.parallel }}
         name: Lint
 
-      - run: npx nx affected -t test --parallel=3
+      - run: npx nx affected -t test --parallel=${{ matrix.parallel }}
         name: Test
 
-      - run: npx nx affected -t build --parallel=3
+      - run: npx nx affected -t build --parallel=${{ matrix.parallel }}
         name: Build
 
-      - run: npx nx affected -t e2e
+      - run: npx nx affected -t e2e --parallel=${{ matrix.parallel }}
         name: E2E Tests
